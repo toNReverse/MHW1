@@ -12,7 +12,7 @@ header{
     align-items: center;
     justify-content: flex-start;
 }
-nav{
+nav {
     position: fixed;
     top: 0;
     left: 0;
@@ -35,15 +35,18 @@ nav img{
     height: 19.8px;
     width: 133.33px;
 }
-nav #label{
-    padding: 5px;
-}
 nav .linksLEFT{
-    padding-left: 20px;
+    display: flex;
+    align-items: center;
 }
-nav #linksRIGHT{
-    padding-right: 20px;
+#linksRIGHT {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    gap: 10px; /* Add spacing between items */
 }
+
+
+
 section{
     display: flex;
     flex-direction: column;
@@ -51,9 +54,42 @@ section{
     justify-content: center;
     margin-top: 35px;
 }
-section .imgslide{
+section .image-item{
     width: 100%;
-    height: 100px;
-    
+    object-fit: cover;
+    margin: -20px 0;
 }
 
+
+
+
+
+#linksRIGHT .searchbar {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    gap: 5px; /* Add spacing between input and button */
+    margin-right: auto;
+}
+
+.search-input {
+    padding: 5px;
+    font-size: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+}
+
+.search-button {
+    padding: 0; /* Remove default padding */
+    background-color: transparent; /* Make the button background transparent */
+    border: none; /* Remove the border */
+    cursor: pointer; /* Change cursor to pointer */
+}
+
+.search-icon {
+    width: 16px; /* Set the width of the search icon */
+    height: 16px; /* Set the height of the search icon */
+}
+.search-button:hover {
+    background-color: #0056b3;
+}
