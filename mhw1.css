@@ -1,0 +1,59 @@
+body{
+    margin: 0;
+}
+header{
+    background-color: white;
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+  
+    padding: 5px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+nav a{
+    display: inline;
+    margin: 10px;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+nav img{
+    height: 19.8px;
+    width: 133.33px;
+}
+nav #label{
+    padding: 5px;
+}
+nav .linksLEFT{
+    padding-left: 20px;
+}
+nav #linksRIGHT{
+    padding-right: 20px;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 35px;
+}
+section .imgslide{
+    width: 100%;
+    height: 100px;
+    
+}
+
