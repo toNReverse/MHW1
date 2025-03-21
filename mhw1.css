@@ -78,7 +78,7 @@ nav img {
     flex: 1;
 }
 
-/* BOX PROMO */
+/* BOX */
 .box {
     position: relative;
     width: 100%;
@@ -107,10 +107,9 @@ nav img {
 /* PRODOTTI */
 .product-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-    gap: 10px;
-    padding: 20px;
-    justify-content: center;
+    grid-template-columns: repeat(6, minmax(150px, 1fr)); /* Griglia responsiva */
+    gap: 5px; /* Spaziatura tra i prodotti */
+    width: 100%; /* Assicura che la griglia occupi tutta la larghezza */
 }
 
 .product-item {
@@ -123,8 +122,10 @@ nav img {
 }
 
 .product-item img {
-    width: 100%;
-    height: auto;
+    width: 100%; /* Adatta le immagini al contenitore */
+    height: auto; /* Mantiene le proporzioni */
+    object-fit: cover; /* Evita lo "zoom" */
+    display: block;
     transition: transform 0.3s ease-in-out;
 }
 
@@ -147,4 +148,17 @@ nav img {
          url('../mhw1/fonts/ABCWhyte-Bold.woff') format('woff');
     font-weight: 700;
     font-style: normal;
+}
+/* OUT OF CORE */
+.outofcore-img{
+    padding-top: 0;
+    width: 100%; /* L'immagine riempie la larghezza dello schermo */
+    height: auto; /* Mantiene le proporzioni */
+    display: block; /* Evita spazi indesiderati sotto l'immagine */
+}
+
+.flex_container {
+    display: flex;
+    flex-direction: column; /* Dispone gli elementi in colonna */
+    gap: 5px; /* Spaziatura tra la griglia e l'immagine */
 }
