@@ -1,95 +1,113 @@
-body{
+body {
     margin: 0;
+    font-family: 'Whyte', sans-serif;
 }
-header{
+
+header {
     background-color: white;
-    background-size: cover;
-    background-position: center;
     height: 400px;
-  
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
 }
-nav {
+
+.navbar-container {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-  
-    padding: 5px;
     background-color: white;
+    padding: 10px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid black;
 }
-nav a{
-    display: inline;
-    margin: 10px;
-    font-size: 12px;
-    text-transform: uppercase;
-}
-nav img{
-    height: 19.8px;
-    width: 133.33px;
-}
-nav .linksLEFT{
+
+#linksLEFT, #linksRIGHT {
     display: flex;
     align-items: center;
+    gap: 15px;
 }
-#linksRIGHT {
+
+nav a {
+    text-decoration: none;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-family: 'Whyte', sans-serif;
+    color: black;
+    margin: 0 10px;
+}
+
+#logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
     display: flex;
-    align-items: center; /* Align items vertically */
-    gap: 10px; /* Add spacing between items */
+    justify-content: center;
+    align-items: center;
 }
 
+nav img {
+    height: 20px;
+    width: 133px;
+}
 
+#linksRIGHT .searchbar {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+}
 
-section{
+.search-container {
+    display: flex;
+    align-items: center;
+    background-color: #F5F5F5;
+    border-radius: 5px;
+    padding: 5px;
+    gap: 5px;
+}
+
+.search-icon {
+    width: 16px;
+    height: 16px;
+}
+
+.search-input {
+    border: none;
+    outline: none;
+    font-size: 12px;
+    background-color: transparent;
+    flex: 1;
+}
+
+section {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin-top: 35px;
 }
-section .image-item{
+
+section .image-item {
     width: 100%;
     object-fit: cover;
     margin: -20px 0;
 }
 
-
-
-
-
-#linksRIGHT .searchbar {
-    display: flex;
-    align-items: center; /* Align items vertically */
-    gap: 5px; /* Add spacing between input and button */
-    margin-right: auto;
+@font-face {
+    font-family: 'Whyte';
+    src: url('../mhw1/fonts/ABCWhyte-Regular.woff2') format('woff2'),
+         url('../mhw1/fonts/ABCWhyte-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
 }
 
-.search-input {
-    padding: 5px;
-    font-size: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    outline: none;
-}
-
-.search-button {
-    padding: 0; /* Remove default padding */
-    background-color: transparent; /* Make the button background transparent */
-    border: none; /* Remove the border */
-    cursor: pointer; /* Change cursor to pointer */
-}
-
-.search-icon {
-    width: 16px; /* Set the width of the search icon */
-    height: 16px; /* Set the height of the search icon */
-}
-.search-button:hover {
-    background-color: #0056b3;
+@font-face {
+    font-family: 'Whyte';
+    src: url('../mhw1/fonts/ABCWhyte-Bold.woff2') format('woff2'),
+         url('../mhw1/fonts/ABCWhyte-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
 }
