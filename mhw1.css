@@ -227,17 +227,26 @@ nav img {
 }
 /* GET THE LOOK */
 .rett-bianco {
+    display: flex;
+    justify-content: flex-end; /* Allinea l'immagine a sinistra */
+    align-items: center; /* Centra verticalmente l'immagine */
     background-color: white;
-    width: 100%; /* Larghezza completa */
-    height: 30px; /* Altezza del rettangolo */
-    position: relative; /* Posizionamento normale rispetto al flusso del documento */
-    margin-top: -10px; /* Se necessario, aggiusta la distanza per sovrapporlo leggermente */
+    width: auto; /* Adatta la larghezza al contenuto */
+    height: auto; /* Adatta l'altezza al contenuto */
+    margin-top: -10px; /* Regola la distanza se necessario */
+    padding: 10px; /* Aggiungi un po' di spazio interno (opzionale) */
     z-index: 1; /* Assicura che il rettangolo sia sotto altri elementi */
+}
+
+.rett-bianco img {
+    max-width: 130px; /* Imposta una dimensione molto più piccola per l'immagine */
+    height: auto; /* Mantieni le proporzioni */
+    object-fit: contain; /* Assicura che l'immagine non venga tagliata */
 }
 .get-the-look {
     display: flex;
     justify-content:space-between;
-    align-self: center;
+    align-items: center;
     padding: 20px;
     
     background-color: black;
@@ -245,12 +254,12 @@ nav img {
     width: 100%; /* Larghezza completa */
     position: relative; /* Posizionamento normale rispetto al flusso del documento */
     margin-top: -10px; /* Se necessario, aggiusta la distanza per sovrapporlo leggermente */
-    
+ 
 }
 .gtl-text-container{
     display: flex;
-    justify-content:space-around;
-    align-self: center;
+    justify-content: row;
+    align-items: center;
     gap: 1.25rem;
 
 }
@@ -259,23 +268,23 @@ nav img {
     font-weight: 100;
     margin: 0; /* Centra il contenitore */
     padding-left: 40px;
+
 }
 .gtl-text-container  p{
     font-size: 14px;
     margin: 0;
-    padding: 0;
-    text-align: left;
 }
 .cta-button {
-    border: 2px solid white;
+    border: 1px solid white;
     color: white;
     text-decoration: none;
-    padding: 10px 20px;
-    border-radius: 20px;
+    padding: 6px 12px; /* Ridotto */
+    border-radius: 30px; /* Ridotto per non essere troppo arrotondato */
     transition: all 0.3s ease-in-out;
     white-space: nowrap; /* Evita il ritorno a capo */
-    align-self: center; /* Centra il pulsante rispetto alla sezione */
+    margin-right: 50px;
 }
+
 .cta-button:hover {
     background-color: white;
     color: black;
