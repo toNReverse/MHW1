@@ -322,6 +322,7 @@ nav img {
     font-size: 1rem;
     font-weight: bold;
 }
+/* SUGGESTED PRODUCTS */
 .suggested h1{ /*perchè senza h1 non mi da la freccia?*/
     font-size: 2.5rem;
     font-weight: 100;
@@ -331,4 +332,39 @@ nav img {
     padding: 30px 32px 20px;
     font-size: 3rem;
 }
+.products {
+    display: flex;
+    grid-template-columns: repeat(4, minmax(150px, 1fr)); /* Griglia responsiva */
+    gap: 10px; /* Aggiunto un po' più di spazio tra i prodotti */
+    width: 100%; /* Assicura che la griglia occupi tutta la larghezza */
+}
 
+.suggested-product {
+    display: flex;
+    flex-direction: column; /* Allinea immagine, titolo e prezzo in colonna */
+    justify-content: space-between; /* Distribuisce lo spazio in modo uniforme */
+    align-items: start; /* Centra gli elementi */
+    text-align: start;
+    box-sizing: border-box; /* Considera il padding nel calcolo delle dimensioni */
+}
+.suggested-product h3, .suggested-product .price {
+    padding-left: 4%;
+}
+
+.suggested-product img {
+    width: 100%;
+    height: auto; /* Mantiene le proporzioni originali */
+    object-fit: contain; /* Evita il ritaglio delle immagini */
+    border-radius: 5px;
+}
+
+.suggested-product h3 {
+    font-size: .75rem;
+    font-weight: bold;
+    margin-top: 10px;
+    width: 100%; /* Evita che il testo vada fuori */
+}
+
+.suggested-product .price {
+    font-size: .75rem;
+}
