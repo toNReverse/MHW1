@@ -1,8 +1,6 @@
 body {
     margin: 0;
     font-family: 'Whyte', sans-serif;
-    text-transform: uppercase;
-
 }
 
 header {
@@ -39,6 +37,7 @@ nav a {
     color: black;
     margin: 0 10px;
     cursor: pointer;
+    text-transform: uppercase;
 }
 
 #logo {
@@ -103,9 +102,8 @@ nav img {
     font-size: 3rem;
     font-weight: bold;
     text-transform: lowercase;
-    font-family: 'Whyte', sans-serif;
     text-align: center;
-    white-space: nowrap;
+    white-space: nowrap;    
 }
 
 /* PRODOTTI */
@@ -164,7 +162,7 @@ nav img {
     font-weight: 700;
     font-style: normal;
 }
-/* OUT OF CORE */
+/* EARTHDAY */
 .earthday-img{
     padding-top: 0;
     width: 100%; /* L'immagine riempie la larghezza dello schermo */
@@ -174,6 +172,7 @@ nav img {
 
 .flex_container {
     display: flex;
+    /*QUI DOVREI RENDERE LA SCHERMATA LOCKATA *TIPO* */
     flex-direction: column; /* Dispone gli elementi in colonna */
     gap: 5px; /* Spaziatura tra la griglia e l'immagine */
 }
@@ -182,12 +181,12 @@ nav img {
     width: 100%;
     height: auto;
     object-fit: cover;
+    text-transform: uppercase;
 }
 .slide_container img {
     width: 100%;
     object-fit: cover;
 }
-
 .content_container {
     position: absolute;  /* Si posiziona rispetto a .slide_container */
     top: 65%; 
@@ -204,7 +203,6 @@ nav img {
     line-height: 1.83;
     letter-spacing: 0.2rem;
     margin: 0;
-    
 }
 .text_wrapper {
     display: flex;
@@ -214,12 +212,10 @@ nav img {
     margin-top: 20px;
     position: relative;
     z-index: 2;
-
 }
 .date {
     text-align: center;
     width: 40%;
-
 }
 .cta {
     text-align: center;
@@ -228,4 +224,61 @@ nav img {
 .hashtag {
     position: relative;
     top: 100px; /* Sposta il tag verso il basso di 10px */
+}
+/* GET THE LOOK */
+.rett-bianco {
+    background-color: white;
+    width: 100%; /* Larghezza completa */
+    height: 30px; /* Altezza del rettangolo */
+    position: relative; /* Posizionamento normale rispetto al flusso del documento */
+    margin-top: -10px; /* Se necessario, aggiusta la distanza per sovrapporlo leggermente */
+    z-index: 1; /* Assicura che il rettangolo sia sotto altri elementi */
+}
+.get-the-look {
+    display: flex;
+    justify-content:space-between;
+    align-self: center;
+    padding: 20px;
+    text-align: start;
+
+    background-color: black;
+    color: white;
+    width: 100%; /* Larghezza completa */
+    position: relative; /* Posizionamento normale rispetto al flusso del documento */
+    margin-top: -10px; /* Se necessario, aggiusta la distanza per sovrapporlo leggermente */
+    
+}
+.gtl-text-container{
+    display: flex;
+    justify-content:space-around;
+    align-self: center;
+    gap: 1.25rem;
+
+}
+.gtl-text-container h1{ /*perchè senza h1 non mi da la freccia?*/
+    font-size: 3rem;
+    line-height: 3rem;
+    font-weight: 100;
+    margin: 0; /* Centra il contenitore */
+    width: 100%;
+
+}
+.gtl-text-container  p{
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    
+}
+.cta-button {
+    border: 2px solid white;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.cta-button:hover {
+    background-color: white;
+    color: black;
 }
