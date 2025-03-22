@@ -1,6 +1,8 @@
 body {
     margin: 0;
     font-family: 'Whyte', sans-serif;
+    text-transform: uppercase;
+
 }
 
 header {
@@ -33,10 +35,7 @@ header {
 }
 
 nav a {
-    text-decoration: none;
     font-size: 12px;
-    text-transform: uppercase;
-    font-family: 'Whyte', sans-serif;
     color: black;
     margin: 0 10px;
     cursor: pointer;
@@ -166,7 +165,7 @@ nav img {
     font-style: normal;
 }
 /* OUT OF CORE */
-.outofcore-img{
+.earthday-img{
     padding-top: 0;
     width: 100%; /* L'immagine riempie la larghezza dello schermo */
     height: auto; /* Mantiene le proporzioni */
@@ -177,4 +176,56 @@ nav img {
     display: flex;
     flex-direction: column; /* Dispone gli elementi in colonna */
     gap: 5px; /* Spaziatura tra la griglia e l'immagine */
+}
+.slide_container {
+    position: relative; /* Importante per posizionare correttamente gli elementi figli */
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.slide_container img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.content_container {
+    position: absolute;  /* Si posiziona rispetto a .slide_container */
+    top: 65%; 
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centra perfettamente */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: white;
+    width: 100%;
+    font-size: 1,5vw;
+    font-weight: 1000;
+    line-height: 1.83;
+    letter-spacing: 0.2rem;
+    margin: 0;
+    
+}
+.text_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+    position: relative;
+    z-index: 2;
+
+}
+.date {
+    text-align: center;
+    width: 40%;
+
+}
+.cta {
+    text-align: center;
+    width: 40%;
+}
+.hashtag {
+    position: relative;
+    top: 100px; /* Sposta il tag verso il basso di 10px */
 }
