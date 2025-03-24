@@ -160,8 +160,8 @@ nav img {
     font-weight: 700;
     font-style: normal;
 }
-/* EARTHDAY */
-.earthday-img{
+/* OUTOFCORE */
+.outofcore-img{
     padding-top: 0;
     width: 100%; 
     height: auto; 
@@ -175,75 +175,61 @@ nav img {
     gap: 5px; /* spaziatura tra la griglia e l'immagine */
 }
 .slide_container {
-    position: relative; /* importante per posizionare correttamente gli elementi figli */
+    position: relative;
     width: 100%;
-    height: auto;
-    object-fit: cover;
     text-transform: uppercase;
 }
-.slide_container img {
+
+.outofcore-img {
     width: 100%;
+    display: block;
+    height: auto;
     object-fit: cover;
 }
-.content_container {
-    position: absolute;  /* Si posiziona rispetto a .slide_container */
-    top: 65%; 
+
+.text_wrapper {
+    position: absolute;
+    bottom: 15%; /* Allinea il testo più in basso */
     left: 50%;
-    transform: translate(-50%, -50%); 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    transform: translateX(-50%);
     text-align: center;
     color: white;
     width: 100%;
-    font-size: 1,5vw;
-    font-weight: 1000;
-    line-height: 1.83;
-    letter-spacing: 0.2rem;
-    margin: 0;
-}
-.text_wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    margin-top: 20px;
-    position: relative;
+    line-height: 1.4;
     z-index: 2;
 }
-.date {
-    text-align: center;
-    width: 40%;
+
+.text_wrapper p {
+    margin: 0;
+    font-size: 1rem;
+    letter-spacing: 0.1vw;
+    line-height: 1.125rem;
 }
-.cta {
-    text-align: center;
-    width: 40%;
+
+.text_wrapper h2 {
+    font-weight: 900;
+    margin-top: 5px;
+    font-size: 2.5rem;
+    line-height: 2.25rem;
+    text-transform: lowercase;
 }
-.hashtag {
-    position: relative;
-    top: 100px; /* sposta il tag verso il basso di 100px */
+.text_wrapper a{
+    font-size: 14px;
+    max-width: 600px; /* Limita la larghezza del testo */
+    margin: 0;
+    background-color: white;
+    color: black;
+    padding: 15px 20px 15px 20px;
+    border-radius: 30px;
+    font-weight: 500;
+    text-transform: capitalize;
 }
 /* GET THE LOOK */
-.rett-bianco {
-    display: flex;
-    justify-content: flex-end; 
-    align-items: center; 
-    background-color: white;
-    width: auto; 
-    height: auto; 
-    margin-top: -10px; 
-    padding: 10px; 
-    z-index: 1; /* assicura che il rettangolo sia sotto altri elementi */
-}
-.rett-bianco img {
-    max-width: 130px; /* imposta una dimensione molto più piccola per l'immagine */
-    height: auto; /* mantieni le proporzioni */
-    object-fit: contain; /* assicura che l'immagine non venga tagliata */
-}
 .rett-nero   {
     background-color: black;
     color: white;
     padding-bottom: 40px;
+    margin-top: -5px;
 }
 .get-the-look {
     display: flex;
@@ -418,9 +404,81 @@ nav img {
     padding: 15px 20px 15px 20px;
     border-radius: 30px;
 }
+
 /* FOOTER */
-footer{
-    background-color: white;
-    width: 100%;
-    height: 500px;
+footer {
+    background-color: #f8f8f8;
+    padding: 40px 0;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.footer-column {
+    width: 20%;
+    min-width: 150px;
+    margin-bottom: 20px;
+}
+.wa-icon {
+    width: 16px; /* Modifica la dimensione in base al testo */
+    height: auto; 
+    vertical-align: middle; /* Per allinearla con il testo */
+    margin-right: 5px; /* Spazio tra icona e testo */
+    
+}
+.footer-column p{
+    font-size: 12px;
+}
+
+.footer-column h3 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 8px;
+}
+
+.footer-column ul li a {
+    color: black;
+    font-size: 14px;
+}
+
+.footer-column ul li a:hover {
+    cursor: pointer;
+}
+
+.small-text {
+    font-size: 12px;
+    color: gray;
+}
+
+.online {
+    color: green;
+    font-weight: bold;
+}
+
+.social-icons a {
+    font-size: 18px;
+    margin-right: 10px;
+    color: black;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 10px;
+    font-size: 12px;
+    color: gray;
 }
