@@ -106,13 +106,15 @@ nav img {
 
 /* PRODOTTI */
 .product-grid {
-    display: grid; /*grid o flex cosa cambia*/
-    grid-template-columns: repeat(6, minmax(150px, 1fr)); /* Griglia responsiva la posso usare?*/
-    gap: 5px; 
-    width: 100%; 
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    width: 100%;
+    justify-content: space-between;
 }
 
 .product-item {
+    flex: 1 1 calc(16.66% - 5px); /* 6 colonne, sottraendo il gap */
     position: relative;
     overflow: hidden;
     text-align: center;
