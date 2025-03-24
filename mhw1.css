@@ -70,7 +70,7 @@ nav img {
 
 }
 .search-input::placeholder {
-    color: black; /* Colore del testo placeholder */
+    color: black; 
 }   
 
 .search-input {
@@ -109,10 +109,10 @@ nav img {
 
 /* PRODOTTI */
 .product-grid {
-    display: grid;
-    grid-template-columns: repeat(6, minmax(150px, 1fr)); /* Griglia responsiva */
-    gap: 5px; /* Spaziatura tra i prodotti */
-    width: 100%; /* Assicura che la griglia occupi tutta la larghezza */
+    display: grid; /*grid o flex cosa cambia*/
+    grid-template-columns: repeat(6, minmax(150px, 1fr)); /* Griglia responsiva la posso usare?*/
+    gap: 5px; 
+    width: 100%; 
 }
 
 .product-item {
@@ -125,9 +125,9 @@ nav img {
 }
 
 .product-item img {
-    width: 100%; /* Adatta le immagini al contenitore */
+    width: 100%;
     height: auto; /* Mantiene le proporzioni */
-    object-fit: cover; /* Evita lo "zoom" */
+    object-fit: cover; /* Evita lo "zoom" lo posso usare?*/
     display: block;
     transition: transform 0.3s ease-in-out;
 }
@@ -141,11 +141,11 @@ nav img {
     top: 50%; /* Posiziona il testo al centro verticale */
     left: 50%; /* Posiziona il testo al centro orizzontale */
     transform: translate(-50%, -50%); /* Centra esattamente il testo */
-    color: white; /* Colore del testo */
-    font-size: 1.2rem; /* Dimensione del testo */
-    font-weight: bold; /* Rende il testo più visibile */
-    text-transform: uppercase; /* Trasforma il testo in maiuscolo */
-    pointer-events: none; /* Impedisce che il testo interferisca con il mouse */
+    color: white; 
+    font-size: 1.2rem; 
+    font-weight: bold; 
+    text-transform: uppercase; 
+    pointer-events: none; /* Impedisce che il testo interferisca con il mouse lo posso usare?*/
 }
 /* FONT */
 @font-face {
@@ -166,19 +166,19 @@ nav img {
 /* EARTHDAY */
 .earthday-img{
     padding-top: 0;
-    width: 100%; /* L'immagine riempie la larghezza dello schermo */
-    height: auto; /* Mantiene le proporzioni */
+    width: 100%; 
+    height: auto; 
     display: block; /* Evita spazi indesiderati sotto l'immagine */
 }
 
 .flex_container {
     display: flex;
     /*QUI DOVREI RENDERE LA SCHERMATA LOCKATA *TIPO* */
-    flex-direction: column; /* Dispone gli elementi in colonna */
-    gap: 5px; /* Spaziatura tra la griglia e l'immagine */
+    flex-direction: column; /* dispone gli elementi in colonna */
+    gap: 5px; /* spaziatura tra la griglia e l'immagine */
 }
 .slide_container {
-    position: relative; /* Importante per posizionare correttamente gli elementi figli */
+    position: relative; /* importante per posizionare correttamente gli elementi figli */
     width: 100%;
     height: auto;
     object-fit: cover;
@@ -192,7 +192,7 @@ nav img {
     position: absolute;  /* Si posiziona rispetto a .slide_container */
     top: 65%; 
     left: 50%;
-    transform: translate(-50%, -50%); /* Centra perfettamente */
+    transform: translate(-50%, -50%); 
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -224,24 +224,24 @@ nav img {
 }
 .hashtag {
     position: relative;
-    top: 100px; /* Sposta il tag verso il basso di 10px */
+    top: 100px; /* sposta il tag verso il basso di 100px */
 }
 /* GET THE LOOK */
 .rett-bianco {
     display: flex;
-    justify-content: flex-end; /* Allinea l'immagine a sinistra */
-    align-items: center; /* Centra verticalmente l'immagine */
+    justify-content: flex-end; 
+    align-items: center; 
     background-color: white;
-    width: auto; /* Adatta la larghezza al contenuto */
-    height: auto; /* Adatta l'altezza al contenuto */
-    margin-top: -10px; /* Regola la distanza se necessario */
-    padding: 10px; /* Aggiungi un po' di spazio interno (opzionale) */
-    z-index: 1; /* Assicura che il rettangolo sia sotto altri elementi */
+    width: auto; 
+    height: auto; 
+    margin-top: -10px; 
+    padding: 10px; 
+    z-index: 1; /* assicura che il rettangolo sia sotto altri elementi */
 }
 .rett-bianco img {
-    max-width: 130px; /* Imposta una dimensione molto più piccola per l'immagine */
-    height: auto; /* Mantieni le proporzioni */
-    object-fit: contain; /* Assicura che l'immagine non venga tagliata */
+    max-width: 130px; /* imposta una dimensione molto più piccola per l'immagine */
+    height: auto; /* mantieni le proporzioni */
+    object-fit: contain; /* assicura che l'immagine non venga tagliata */
 }
 .rett-nero   {
     background-color: black;
@@ -254,9 +254,9 @@ nav img {
     align-items: center;
     padding: 20px;
 
-    width: 100%; /* Larghezza completa */
-    position: relative; /* Posizionamento normale rispetto al flusso del documento */
-    margin-top: -10px; /* Se necessario, aggiusta la distanza per sovrapporlo leggermente */
+    width: 100%; 
+    position: relative; 
+    margin-top: -10px; /* aggiusta la distanza per sovrapporlo leggermente */
  
 }
 .gtl-text-container{
@@ -269,7 +269,7 @@ nav img {
 .gtl-text-container h1{ /*perchè senza h1 non mi da la freccia?*/
     font-size: 2.5rem;
     font-weight: 100;
-    margin: 0; /* Centra il contenitore */
+    margin: 0; /* centra il contenitore */
     padding-left: 40px;
 
 }
@@ -281,10 +281,10 @@ nav img {
     border: 1px solid white;
     color: white;
     text-decoration: none;
-    padding: 6px 12px; /* Ridotto */
-    border-radius: 30px; /* Ridotto per non essere troppo arrotondato */
+    padding: 6px 12px; 
+    border-radius: 30px; 
     transition: all 0.3s ease-in-out;
-    white-space: nowrap; /* Evita il ritorno a capo */
+    white-space: nowrap; /* Evita il ritorno a capo, ha senso?*/
     margin-right: 50px;
 }
 
@@ -297,12 +297,12 @@ nav img {
     background-color: black;
     display: flex;
     justify-content: space-between;
-    align-items: stretch; /* Assicura che tutti i div abbiano la stessa altezza */
+    align-items: stretch; /* assicura che tutti i div abbiano la stessa altezza */
 }
 
 .look-card {
     position: relative;
-    width: 24%; /* Per avere 4 colonne */
+    width: 24%; /* per avere 4 colonne, quale metodo è il migliore */
     overflow: hidden;
     margin: 0;
     padding: 0;
@@ -323,10 +323,10 @@ nav img {
     font-weight: bold;
 }
 /* SUGGESTED PRODUCTS */
-.suggested h1{ /*perchè senza h1 non mi da la freccia?*/
+.suggested-text h1{ /*perchè senza h1 non mi da la freccia? si crea una freccia a causa del size(?)*/
     font-size: 2.5rem;
     font-weight: 100;
-    margin: 0; /* Centra il contenitore */
+    margin: 0; 
     padding-left: 40px;
     text-transform: uppercase;
     padding: 30px 32px 20px;
@@ -334,37 +334,40 @@ nav img {
 }
 .products {
     display: flex;
-    grid-template-columns: repeat(4, minmax(150px, 1fr)); /* Griglia responsiva */
-    gap: 10px; /* Aggiunto un po' più di spazio tra i prodotti */
-    width: 100%; /* Assicura che la griglia occupi tutta la larghezza */
+    grid-template-columns: repeat(4, minmax(150px, 1fr)); /* griglia responsiva */
+    gap: 5px; 
+    width: 100%;
 }
 
 .suggested-product {
     display: flex;
-    flex-direction: column; /* Allinea immagine, titolo e prezzo in colonna */
-    justify-content: space-between; /* Distribuisce lo spazio in modo uniforme */
-    align-items: start; /* Centra gli elementi */
+    flex-direction: column; /* allinea immagine, titolo e prezzo in colonna */
+    justify-content: space-between; /* distribuisce lo spazio in modo uniforme */
+    align-items: start; 
     text-align: start;
-    box-sizing: border-box; /* Considera il padding nel calcolo delle dimensioni */
+    width: calc(25% - 5px); /* i px sono il gap */
 }
 .suggested-product h3, .suggested-product .price {
     padding-left: 4%;
+    margin: 0; 
+
 }
 
 .suggested-product img {
     width: 100%;
-    height: auto; /* Mantiene le proporzioni originali */
-    object-fit: contain; /* Evita il ritaglio delle immagini */
+    height: auto; 
+    object-fit: contain; /* evita il ritaglio delle immagini */
     border-radius: 5px;
 }
 
 .suggested-product h3 {
     font-size: .75rem;
     font-weight: bold;
-    margin-top: 10px;
-    width: 100%; /* Evita che il testo vada fuori */
+    margin-top: 5px;
+    width: 100%; 
 }
 
 .suggested-product .price {
     font-size: .75rem;
+    margin-top: 2px; 
 }
