@@ -337,6 +337,7 @@ nav img {
     grid-template-columns: repeat(4, minmax(150px, 1fr)); /* griglia responsiva */
     gap: 5px; 
     width: 100%;
+    padding-bottom: 40px;
 }
 
 .suggested-product {
@@ -350,7 +351,6 @@ nav img {
 .suggested-product h3, .suggested-product .price {
     padding-left: 4%;
     margin: 0; 
-
 }
 
 .suggested-product img {
@@ -371,3 +371,16 @@ nav img {
     font-size: .75rem;
     margin-top: 2px; 
 }
+/* BERSHKA MUSIC */
+.bershka-music {
+    width: 100%;
+    height: auto; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+.bershka-music img {
+    width: 100%; 
+    height: auto; 
+}
+/* SPAM SCONTO */
