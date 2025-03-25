@@ -509,8 +509,6 @@ footer {
         height: auto;
         overflow-x: hidden    
     }
-
-
    .navbar-container
    {
     background-color: transparent;
@@ -519,6 +517,7 @@ footer {
     align-items: start;
     padding: 10px;
     width: 100%;
+    border : none;
    }
     #linksLEFT a {
         display: none;
@@ -529,7 +528,7 @@ footer {
     }
 
    .search-container{
-    display: none;
+        display: none;
    }
    #logo {
     position: relative;
@@ -564,14 +563,14 @@ footer {
         object-fit:fill; /* Mantiene le proporzioni dell'immagine */
         max-height: 300px; /* Imposta un'altezza massima per schermi mobili */
     }
-
+    
     .box-text {
         font-size: 1rem; /* Riduce la dimensione del testo su mobile */
         width: 80%;
     }
 
     .product-grid {
-        grid-template-columns: repeat(6, 1fr); /* 2 colonne su mobile */
+        grid-template-columns: repeat(6, 1fr);              /* COME LO METTO A SCORRIMENTO? */
         gap: 5px;
         padding-top: 5px;
     }
@@ -579,5 +578,196 @@ footer {
     .product-item {
         width: 100%;
     }
+
+    .look-gallery {
+        width: auto; /* Reduce container width */
+        padding: 0;
+        overflow-x: hidden;
+    }
+
+    .look-gallery .product-grid {
+        grid-template-columns: repeat(6, minmax(40px, 1fr));
+        gap: 1px;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .look-gallery .product-item {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .look-gallery .product-item img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+    .product-text{
+        font-size: 0.75rem;
+        font-weight: 600;
+    }
+    .gtl-text-container h1{
+        font-size: 2rem;
+        margin: 0;                          
+    }
+    .gtl-text-container p{
+        font-size: 0.75rem;
+    }
+    .cta-button {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        padding: 5px 10px;
+
+    }
+    /* SUGGESTED PRODUCTS */
+    .products{
+        padding-bottom: 10px;
+    }
+    .suggested-text h1{
+        font-size: 2rem;
+        margin: 0;                          /* NON SI RIMUOVE IL MARGIN */
+        padding: 0;
+        padding-left: 5px;
+    }
+    .spam-conto {
+        width: auto;
+        margin: 0 auto;
+        padding: 10px 10px 0px 10px;
+        overflow-y: hidden;
+        margin-top: -5px;
+        gap: 10px;
+    }
+
+    .spam-conto p {
+        font-size: 0.8rem;
+        line-height: 1.2;
+        margin: 5px 0;
+    }
+
+    .spam-conto h2{
+        font-size: 2rem;
+        margin: 5px 0;
+    }
+
+    .spam-conto .content {
+        width: 100%;
+        padding: 0;
+    }
+
+    .container {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    /* FOOTER E BERSHKA MUSIC */
+footer {
+        width: 100vw;
+        margin-left: calc(-50vw + 50%);
+        position: relative;
+        overflow: hidden;
+        padding: 10px;
+        padding: 0;
+
+    }
+ 
+
+    .bershka-music {
+        width: auto ;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .footer-content,
+    .music-content {
+        width: 90%;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .footer p,
+    .bershka-music p {
+        font-size: 0.9rem;
+        line-height: 1.4;
+    }
+    .footer-column{
+        display: none;
+    }
+    .footer-column.social{
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: row;
+        align-items: center;
+    }
+    .footer-column.social {
+        display: flex;
+        justify-content: center; /* Center horizontally */
+        align-items: flex-start; /* Center vertically */
+        gap: 20px; /* Space between social icons */
+        width: 100%; /* Full width */
+        padding: 10px 0; /* Add some vertical padding */
+    }
+
+    .footer-column.social img {
+        width: 24px; /* Set icon size */
+        height: 24px;
+    }
+    .social-icons{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+
+    .rett-nero{
+        padding-bottom: 20px;
+    }
+    .get-the-look {
+        display: flex;
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items horizontally */
+        gap: 15px; /* Space between elements */
+        padding: 20px 10px;
+    }
+    
+    .gtl-text-container {
+        text-align: center;
+        width: 90%;
+    }
+
+    .gtl-text-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 90%;
+        gap: 5px; /* Increased space between elements */
+    }
+
+    .gtl-text-container h1 {
+        margin-bottom: 15px; /* Add space after heading */
+        font-size: 2rem;
+        padding: 0;
+    }
+
+    .gtl-text-container p {
+        margin: 0;
+        padding: 0 10px;
+        font-size: 0.75rem;
+        line-height: 1.4;
+    }
+    .text_wrapper p{
+        font-size: 0.75rem;
+    }
+    .text_wrapper h2{
+        font-size: 2rem;
+    }
+    .text_wrapper a, .spam-conto a{
+        font-size: 0.75rem;
+        padding: 10px 15px;
+    }
+
 }
 
