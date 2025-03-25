@@ -1,7 +1,9 @@
 body {
     margin: 0;
-    font-family: 'Whyte', sans-serif;   
+    font-family: 'Whyte', sans-serif;
+    
 }
+
 header {
     background-color: white;
     height: 400px;
@@ -23,11 +25,13 @@ header {
     border-bottom: 1px solid black;
     z-index: 100;
 }
+
 #linksLEFT, #linksRIGHT {
     display: flex;
     align-items: center;
     gap: 15px;
 }
+
 nav a {
     font-size: 12px;
     color: black;
@@ -35,6 +39,7 @@ nav a {
     cursor: pointer;
     text-transform: uppercase;
 }
+
 #logo {
     position: absolute;
     left: 50%;
@@ -43,10 +48,12 @@ nav a {
     justify-content: center;
     align-items: center;
 }
+
 nav img {
     height: 20px;
     width: 133px;
 }
+
 .search-container {
     display: flex;
     align-items: center;
@@ -55,6 +62,7 @@ nav img {
     padding: 5px;
     gap: 5px;
 }
+
 .search-icon {
     width: 16px;
     height: 16px;
@@ -63,6 +71,7 @@ nav img {
 .search-input::placeholder {
     color: black; 
 }   
+
 .search-input {
     border: none;
     outline: none;
@@ -70,15 +79,18 @@ nav img {
     background-color: transparent;
     flex: 1;
 }
+
 /* BOX */
 .box-slideshow {
     position: relative;
     width: 100%;
     height: auto;
 }
+
 .box-image {
     width: 100%;
 }
+
 .box-text {
     position: absolute;
     top: 75%;
@@ -90,16 +102,16 @@ nav img {
     text-align: center;
     white-space: nowrap;    
 }
+
 /* PRODOTTI */
 .product-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 5px;
-    width: 100%;
-    justify-content: space-between;
+    display: grid; /*grid o flex cosa cambia*/
+    grid-template-columns: repeat(6, minmax(150px, 1fr)); /* Griglia responsiva la posso usare?*/
+    gap: 5px; 
+    width: 100%; 
 }
+
 .product-item {
-    flex: 1 1 calc(16.66% - 5px); /* 6 colonne, sottraendo il gap */
     position: relative;
     overflow: hidden;
     text-align: center;
@@ -107,6 +119,7 @@ nav img {
     border-radius: 5px;
     transition: all 0.3s ease-in-out;
 }
+
 .product-item img {
     width: 100%;
     height: auto; /* Mantiene le proporzioni */
@@ -114,10 +127,11 @@ nav img {
     display: block;
     transition: transform 0.3s ease-in-out;
 }
+
 .product-item:hover img {
     transform: scale(1.1);
-    cursor: pointer;
 }
+
 .product-text {
     position: absolute;
     top: 50%; /* Posiziona il testo al centro verticale */
@@ -137,6 +151,7 @@ nav img {
     font-weight: 400;
     font-style: normal;
 }
+
 @font-face {
     font-family: 'Whyte';
     src: url('../mhw1/fonts/ABCWhyte-Bold.woff2') format('woff2'),
@@ -151,6 +166,7 @@ nav img {
     height: auto; 
     display: block; /* Evita spazi indesiderati sotto l'immagine */
 }
+
 .flex_container {
     display: flex;
     /*QUI DOVREI RENDERE LA SCHERMATA LOCKATA *TIPO* */
@@ -162,12 +178,14 @@ nav img {
     width: 100%;
     text-transform: uppercase;
 }
+
 .outofcore-img {
     width: 100%;
     display: block;
     height: auto;
     object-fit: cover;
 }
+
 .text_wrapper {
     position: absolute;
     bottom: 15%; /* Allinea il testo più in basso */
@@ -179,12 +197,14 @@ nav img {
     line-height: 1.4;
     z-index: 2;
 }
+
 .text_wrapper p {
     margin: 0;
     font-size: 1rem;
     letter-spacing: 0.1vw;
     line-height: 1.125rem;
 }
+
 .text_wrapper h2 {
     font-weight: 900;
     margin-top: 5px;
@@ -202,9 +222,6 @@ nav img {
     border-radius: 30px;
     font-weight: 500;
     text-transform: capitalize;
-}
-.text_wrapper a:hover{
-    cursor: pointer;    
 }
 /* GET THE LOOK */
 .rett-nero   {
@@ -229,6 +246,7 @@ nav img {
     justify-content: row;
     align-items: center;
     gap: 1.25rem;
+
 }
 .gtl-text-container h1{ /*perchè senza h1 non mi da la freccia?*/
     font-size: 2.5rem;
@@ -251,6 +269,7 @@ nav img {
     white-space: nowrap; /* Evita il ritorno a capo, ha senso?*/
     margin-right: 50px;
 }
+
 .cta-button:hover {
     background-color: white;
     color: black;
@@ -262,6 +281,7 @@ nav img {
     justify-content: space-between;
     align-items: stretch; /* assicura che tutti i div abbiano la stessa altezza */
 }
+
 .look-card {
     position: relative;
     width: 24%; /* per avere 4 colonne, quale metodo è il migliore */
@@ -269,6 +289,7 @@ nav img {
     margin: 0;
     padding: 0;
 }
+
 .look-card img {
     width: 100%;
     height: auto;
@@ -282,7 +303,6 @@ nav img {
     color: white;
     font-size: 1rem;
     font-weight: bold;
-    pointer-events: none;
 }
 /* SUGGESTED PRODUCTS */
 .suggested-text h1{ /*perchè senza h1 non mi da la freccia? si crea una freccia a causa del size(?)*/
@@ -320,15 +340,15 @@ nav img {
     height: auto; 
     object-fit: contain; /* evita il ritaglio delle immagini */
     border-radius: 5px;
-    cursor: pointer;
-
 }
+
 .suggested-product h3 {
     font-size: .75rem;
     font-weight: bold;
     margin-top: 5px;
     width: 100%; 
 }
+
 .suggested-product .price {
     font-size: .75rem;
     margin-top: 2px; 
@@ -343,8 +363,7 @@ nav img {
 }
 .bershka-music img {
     width: 100%; 
-    height: auto;
-    cursor: pointer;
+    height: auto; 
 }
 /* SPAM SCONTO */
 .spam-conto{
@@ -363,11 +382,13 @@ nav img {
     text-align: center; /* Centra il testo */
     padding: 60px 20px; /* Spaziatura per ingrandire la sezione */
 }
+
 .spam-conto h2 {
     font-size: 50px;
     font-weight: bold;
     margin-bottom: 10px;
 }
+
 .spam-conto p {
     font-size: 16px;
     font-weight: 100;
@@ -382,15 +403,14 @@ nav img {
     padding: 15px 20px 15px 20px;
     border-radius: 30px;
 }
-.spam-conto a:hover {
-    cursor: pointer;
-}
+
 /* FOOTER */
 footer {
     background-color: #f8f8f8;
     padding: 40px 0;
     font-family: Arial, sans-serif;
 }
+
 .footer-container {
     display: flex;
     justify-content: space-around;
@@ -398,6 +418,7 @@ footer {
     margin: 0 auto;
     flex-wrap: wrap;
 }
+
 .footer-column {
     width: 20%;
     min-width: 150px;
@@ -407,46 +428,126 @@ footer {
     width: 16px; /* Modifica la dimensione in base al testo */
     height: auto; 
     vertical-align: middle; /* Per allinearla con il testo */
-    margin-right: 5px; /* Spazio tra icona e testo */   
+    margin-right: 5px; /* Spazio tra icona e testo */
+    
 }
 .footer-column p{
     font-size: 12px;
 }
+
 .footer-column h3 {
     font-size: 16px;
     font-weight: bold;
     margin-bottom: 10px;
 }
+
 .footer-column ul {
     list-style: none;
     padding: 0;
 }
+
 .footer-column ul li {
     margin-bottom: 8px;
 }
+
 .footer-column ul li a {
     color: black;
     font-size: 14px;
 }
+
 .footer-column ul li a:hover {
     cursor: pointer;
 }
+
 .small-text {
     font-size: 12px;
     color: gray;
 }
+
 .online {
     color: green;
     font-weight: bold;
 }
+
 .social-icons a {
     font-size: 18px;
     margin-right: 10px;
     color: black;
 }
+
 .footer-bottom {
     text-align: center;
     padding: 10px;
     font-size: 12px;
     color: gray;
 }
+/* MOBILE */
+#menu-mobile {
+    display: none;
+}
+  
+    /* Stile per il menu hamburger */
+#menu-mobile {
+    display: none; /* Nascondiamo il menu hamburger su desktop */
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+/* Stile per le linee dell’hamburger */
+#menu-mobile div {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    border-radius: 5px;
+}
+
+
+@media (max-width: 500px) {
+    body {
+        width: 100%;
+        height: auto;
+        overflow-x: hidden    
+    }
+
+
+   .navbar-container
+   {
+    background-color: transparent;
+    justify-content: flex-start;
+    flex-direction: row;
+    align-items: start;
+   }
+    #linksLEFT a {
+        display: none;
+    }
+
+    #menu-mobile {
+        display: flex; /* Mostra l’icona hamburger su mobile */
+    }
+
+   .search-container{
+    display: none;
+   }
+   #logo {
+    position: relative;
+    display: none;
+    justify-content: flex-start; /* Allinea il logo a sinistra */
+    margin-left: -50px; /* Aggiungi un margine a sinistra (opzionale) */
+    }
+    #linksRIGHT a {
+        position: relative;
+
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+    .flex-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+}
+
