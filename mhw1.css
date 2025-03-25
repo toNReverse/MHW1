@@ -517,6 +517,8 @@ footer {
     justify-content: flex-start;
     flex-direction: row;
     align-items: start;
+    padding: 10px;
+    width: 100%;
    }
     #linksLEFT a {
         display: none;
@@ -547,7 +549,36 @@ footer {
     .flex-container {
         display: flex;
         flex-wrap: wrap;
+        width: 100%;
+        padding: 0 10px;
+    }
+    .box-slideshow {
+        width: 100vw; /* Usa viewport width */
+        margin-left: calc(-50vw + 50%); /* Centra il contenitore */
+        position: relative;
     }
 
+    .box-image img {
+        width: 100%;
+        height: auto;
+        object-fit:fill; /* Mantiene le proporzioni dell'immagine */
+        max-height: 300px; /* Imposta un'altezza massima per schermi mobili */
+    }
+
+    .box-text {
+        font-size: 1rem; /* Riduce la dimensione del testo su mobile */
+        width: 80%;
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(6, 1fr); /* 2 colonne su mobile */
+        gap: 5px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    .product-item {
+        width: 100%;
+    }
 }
 
