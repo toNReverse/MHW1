@@ -574,7 +574,6 @@ footer {
         grid-template-columns: repeat(6, 1fr); /* 2 colonne su mobile */
         gap: 5px;
         padding-top: 5px;
-        padding-bottom: 5px;
     }
 
     .product-item {
