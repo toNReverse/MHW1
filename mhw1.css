@@ -105,7 +105,7 @@ nav img {
 
 /* PRODOTTI */
 .product-grid {
-    display: grid; /*grid o flex cosa cambia*/
+    display: grid; /*grid o flex cosa cambia?*/
     grid-template-columns: repeat(6, minmax(150px, 1fr)); /* Griglia responsiva la posso usare?*/
     gap: 5px; 
     width: 100%; 
@@ -377,10 +377,10 @@ nav img {
     margin-top: -5px;
 }
 .spam-conto {
-    background-color: black; /* Sfondo nero */
-    color: white; /* Testo bianco */
+    background-color: black; 
+    color: white; 
     text-align: center; /* Centra il testo */
-    padding: 60px 20px; /* Spaziatura per ingrandire la sezione */
+    padding: 60px 20px;
 }
 
 .spam-conto h2 {
@@ -396,7 +396,7 @@ nav img {
 }
 .spam-conto a {
     font-size: 14px;
-    max-width: 600px; /* Limita la larghezza del testo */
+    max-width: 600px; 
     margin: 0;
     background-color: white;
     color: black;
@@ -425,10 +425,10 @@ footer {
     margin-bottom: 20px;
 }
 .wa-icon {
-    width: 16px; /* Modifica la dimensione in base al testo */
+    width: 16px; 
     height: auto; 
-    vertical-align: middle; /* Per allinearla con il testo */
-    margin-right: 5px; /* Spazio tra icona e testo */
+    vertical-align: middle; 
+    margin-right: 5px; 
     
 }
 .footer-column p{
@@ -486,15 +486,15 @@ footer {
     display: none;
 }
   
-    /* Stile per il menu hamburger */
+/* menu hamburger */
 #menu-mobile {
-    display: none; /* Nascondiamo il menu hamburger su desktop */
+    display: none;
     flex-direction: column;
     gap: 5px;
     cursor: pointer;
 }
 
-/* Stile per le linee dell’hamburger */
+/* linee dell’hamburger */
 #menu-mobile div {
     width: 25px;
     height: 3px;
@@ -519,12 +519,13 @@ footer {
     width: 100%;
     border : none;
    }
+   
     #linksLEFT a {
         display: none;
     }
 
     #menu-mobile {
-        display: flex; /* Mostra l’icona hamburger su mobile */
+        display: flex; 
     }
 
    .search-container{
@@ -533,8 +534,8 @@ footer {
    #logo {
     position: relative;
     display: none;
-    justify-content: flex-start; /* Allinea il logo a sinistra */
-    margin-left: -50px; /* Aggiungi un margine a sinistra (opzionale) */
+    justify-content: flex-start;
+    margin-left: -50px; 
     }
     #linksRIGHT a {
         position: relative;
@@ -551,17 +552,12 @@ footer {
         width: 100%;
         padding: 0 10px;
     }
-    .box-slideshow {
-        width: 100vw; /* Usa viewport width */
-        margin-left: calc(-50vw + 50%); /* Centra il contenitore */
-        position: relative;
-    }
 
     .box-image img {
         width: 100%;
         height: auto;
-        object-fit:fill; /* Mantiene le proporzioni dell'immagine */
-        max-height: 300px; /* Imposta un'altezza massima per schermi mobili */
+        object-fit: fill; /* Mantiene le proporzioni dell'immagine */
+        max-height: 300px; 
     }
     
     .box-text {
@@ -570,17 +566,23 @@ footer {
     }
 
     .product-grid {
-        grid-template-columns: repeat(6, 1fr);              /* COME LO METTO A SCORRIMENTO? */
+        display: flex; 
+        overflow-x: auto; 
+        scroll-snap-type: x mandatory; /* Smooth scroll snap */
         gap: 5px;
-        padding-top: 5px;
-    }
-
-    .product-item {
+        padding: 5px 5px 0px 5px;
         width: 100%;
+    }
+    
+    .product-item {
+        flex: 0 0 calc(25% - 8px); 
+        scroll-snap-align: start;
+        width: auto;
+        min-width: 80px; 
     }
 
     .look-gallery {
-        width: auto; /* Reduce container width */
+        width: auto; 
         padding: 0;
         overflow-x: hidden;
     }
@@ -625,10 +627,11 @@ footer {
     /* SUGGESTED PRODUCTS */
     .products{
         padding-bottom: 10px;
+        padding-left: 5px;
     }
     .suggested-text h1{
         font-size: 2rem;
-        margin: 0;                          /* NON SI RIMUOVE IL MARGIN */
+        margin: 0;                         
         padding: 0;
         padding-left: 5px;
     }
@@ -662,8 +665,8 @@ footer {
         overflow-x: hidden;
     }
 
-    /* FOOTER E BERSHKA MUSIC */
-footer {
+/* FOOTER E BERSHKA MUSIC */
+    footer {
         width: 100vw;
         margin-left: calc(-50vw + 50%);
         position: relative;
@@ -703,15 +706,15 @@ footer {
     }
     .footer-column.social {
         display: flex;
-        justify-content: center; /* Center horizontally */
-        align-items: flex-start; /* Center vertically */
-        gap: 20px; /* Space between social icons */
-        width: 100%; /* Full width */
-        padding: 10px 0; /* Add some vertical padding */
+        justify-content: center; 
+        align-items: flex-start; 
+        gap: 20px; 
+        width: 100%; 
+        padding: 10px 0; 
     }
 
     .footer-column.social img {
-        width: 24px; /* Set icon size */
+        width: 24px; /* dimensioni icone */
         height: 24px;
     }
     .social-icons{
@@ -726,9 +729,9 @@ footer {
     }
     .get-the-look {
         display: flex;
-        flex-direction: column; /* Stack items vertically */
-        align-items: center; /* Center items horizontally */
-        gap: 15px; /* Space between elements */
+        flex-direction: column; 
+        align-items: center; 
+        gap: 15px; 
         padding: 20px 10px;
     }
     
@@ -743,11 +746,11 @@ footer {
         align-items: center;
         text-align: center;
         width: 90%;
-        gap: 5px; /* Increased space between elements */
+        gap: 5px; 
     }
 
     .gtl-text-container h1 {
-        margin-bottom: 15px; /* Add space after heading */
+        margin-bottom: 15px; 
         font-size: 2rem;
         padding: 0;
     }
@@ -769,5 +772,18 @@ footer {
         padding: 10px 15px;
     }
 
+    .slideshow-container {
+        width: 100vw;
+        margin-left: calc(-50vw + 50%);
+        position: relative;
+        overflow: hidden;
+    }
+
+    .slideshow-container img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        display: block;
+    }
 }
 
