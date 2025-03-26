@@ -340,6 +340,9 @@ nav img {
     text-align: start;
     width: calc(25% - 5px); /* i px sono il gap */
 }
+.suggested-product:hover{
+    cursor: pointer;
+}
 .suggested-product h3, .suggested-product .price {
     padding-left: 4%;
     margin: 0; 
@@ -370,6 +373,9 @@ nav img {
     display: flex; 
     justify-content: center;
     align-items: center;
+}
+.bershka-music:hover{
+    cursor: pointer;
 }
 .bershka-music img {
     width: 100%; 
@@ -409,6 +415,9 @@ nav img {
     color: black;
     padding: 15px 20px 15px 20px;
     border-radius: 30px;
+}
+.spam-conto a:hover {
+    cursor: pointer;
 }
 
 /* FOOTER */
@@ -460,6 +469,8 @@ footer {
 .footer-column ul li a {
     color: black;
     font-size: 14px;
+    text-decoration: none;  
+
 }
 
 .footer-column ul li a:hover {
