@@ -244,7 +244,7 @@ nav img {
     display: flex;
     justify-content:space-between;
     align-items: center;
-    padding: 20px;
+    padding: 40px 32px 20px;
 
     width: 100%; 
     position: relative; 
@@ -315,7 +315,7 @@ nav img {
     font-weight: bold;
 }
 /* SUGGESTED PRODUCTS */
-.suggested-text h1{ /*perchè senza h1 non mi da la freccia? si crea una freccia a causa del size(?)*/
+.suggested-text h2{ /*perchè senza h1 non mi da la freccia? si crea una freccia a causa del size(?)*/
     font-size: 2.5rem;
     font-weight: 100;
     margin: 0; 
@@ -329,7 +329,7 @@ nav img {
     grid-template-columns: repeat(4, minmax(150px, 1fr)); /* griglia responsiva */
     gap: 5px; 
     width: 100%;
-    padding-bottom: 40px;
+    padding-bottom: 60px;
 }
 
 .suggested-product {
@@ -387,8 +387,7 @@ nav img {
     margin-top: -5px;
     color: white; 
     text-align: center; /* Centra il testo */
-
-
+    padding: 40px 0px 80px 0px;
 }
 
 
@@ -406,7 +405,6 @@ nav img {
 .spam-conto a {
     font-size: 14px;
     max-width: 600px; 
-    margin: 0;
     background-color: white;
     color: black;
     padding: 15px 20px 15px 20px;
@@ -637,7 +635,7 @@ footer {
         padding-bottom: 10px;
         padding-left: 5px;
     }
-    .suggested-text h1{
+    .suggested-text h2{
         font-size: 2rem;
         margin: 0;                         
         padding: 0;
@@ -794,4 +792,3 @@ footer {
         display: block;
     }
 }
-
