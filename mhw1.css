@@ -563,12 +563,6 @@ footer {
         height: auto;
         display: block;
     }
-    .flex-container {
-        display: flex;
-        flex-wrap: wrap;
-        width: 100%;
-        padding: 0 10px;
-    }
 
     .box-image img {
         width: 100%;
@@ -803,6 +797,7 @@ footer {
         margin-left: calc(-50vw + 50%);
         position: relative;
         overflow: hidden;
+        margin-top: 30px;
     }
 
     .slideshow-container img {
