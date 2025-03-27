@@ -528,11 +528,11 @@ footer {
         overflow-x: hidden;    
     }
    .navbar-container{
-    background-color: transparent;
+    background-color: whitesmoke;
     justify-content: flex-start;
     flex-direction: row;
     align-items: start;
-    padding: 10px;
+    padding: 5x;
     width: 100%;
     border : none;
    }
