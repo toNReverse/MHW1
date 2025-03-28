@@ -185,7 +185,7 @@ nav img {
     margin: 0 auto;
     padding: 0;
     overflow-x: hidden;
-    margin-top: 648px;
+    margin-top: 680px;
 }
 .slide_container {
     position: relative;
@@ -609,7 +609,33 @@ footer {
         margin-top: -3px;
     }
     .look-gallery {
-        width: auto; 
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px; /* Mantiene solo il gap tra le immagini */
+    }
+    .look-gallery .look-card img {
+        width: 100%; /* Make images smaller */
+        height: auto;
+        object-fit: cover;
+        display: block;
+        margin: 0; /* Center images */
+    }
+
+    .look-card {
+        position: relative;
+        width: calc(50% - 2.5px); /* Due immagini per riga, considerando il gap */
+        margin: 0;
+        padding: 0;
+        overflow: hidden; /* Evita problemi di spazi extra */
+    }
+    .look-card img {
+        width: 100%;
+        height: 90%; /* Riduce l'altezza */
+        object-fit: cover; /* Assicura che l'immagine riempia il contenitore */
+    }
+
+    .look-gallery {
+        width: auto;
         padding: 0;
         overflow-x: hidden;
     }
@@ -618,7 +644,7 @@ footer {
         font-size: 2vw;
     }
 
-    .look-gallery .product-grid {
+    .product-grid {
         grid-template-columns: repeat(6, minmax(40px, 1fr));
         gap: 1px;
         width: 100%;
@@ -626,13 +652,13 @@ footer {
         padding: 0;
     }
 
-    .look-gallery .product-item {
+        .product-item {
         width: 100%;
         margin: 0;
         padding: 0;
     }
 
-    .look-gallery .product-item img {
+    .product-item img {
         width: 100%;
         height: auto;
         object-fit: cover;
