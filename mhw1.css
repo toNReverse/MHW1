@@ -595,7 +595,6 @@ footer {
         flex-wrap: nowrap;
         overflow-x: auto;
         gap: 2px;
-        padding-top: 2px;
         width: 100%;
         
     }
@@ -844,6 +843,7 @@ footer {
         position: relative;
         overflow: hidden;
         margin-top: -10px;
+        margin-bottom: 7px;
     }
 
     .slideshow-container img {
