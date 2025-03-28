@@ -809,3 +809,11 @@ footer {
         display: block;
     }
 }
+@media (max-width: 890px) {
+    #logo{
+        display: none;
+    }
+    .search-input{
+        display: none;
+    }
+}
